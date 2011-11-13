@@ -21,10 +21,16 @@ QT_QMAKE_EXECUTABLE   C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\qmake.exe
 2. Dalej v QT ako projekt otvorime CmakeLists.txt nastavite cestu pre Build do niekde priecinku (napr. _build), klikneme "run Cmake", ak nam bude chybat cesta pre QMAKESPEC, tak ju nastavime do argumentov "-DQCMAKESPEC=C:\QtSDK\Desktop\Qt\4.7.4\mingw\mkspecs\win32-g++"
 3. Na bocnej liste klikneme Projects->BuildSettings->BuildSteps->Details do riadku "Additional arguments" napiseme "install".
 4. Projekt dame buildovat, nasledne sa nam v projekte vytvori priecinok TrollEdit
-5. Na bocnej liste klikneme Projects->RunSettings do riadku "Arguments" vyberieme cestu k priecinku "TrollEdit\bin", ktory sa nam vytvoril po buildovani napr. "C:\Documents and Settings\User\Desktop\TrollEdit Innovators\TrollEdit\TrollEdit\bin" a buildneme
+5. Na bocnej liste klikneme Projects->RunSettings 
+   5a. klikneme "Add Development Steps" klikneme "Make" do riadku "Additional arguments" napiseme "install" 
+   5b. klikneme RunConfiguration->Add->CustomExecutable  
+   5b. do riadku "Executable" vyberieme cestu k priecinku "TrollEdit\bin\trolledit" 
+       napr. "C:\Documents and Settings\User\Desktop\TrollEdit Innovators\TrollEdit\TrollEdit\bin\trolledit"
+   5c. do riadku "Executable" vyberieme cestu k priecinku "TrollEdit\bin"
+       napr. "C:\Documents and Settings\User\Desktop\TrollEdit Innovators\TrollEdit\TrollEdit\bin"
+   5d. Dame buildnut.
 6. Ak pustame aplikaciu, ale nejde a hlasi ze mu chybaju nejake DLL-ka (napr. QtCore4.dll, QtGui4.dll, libgcc_s_dw2-1.dll), tak ich k nej treba nahrat z cesty "C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin" 
 
 
-Znamy bug:
-- V QT nechce spustat aplikaciu, ale ide to mimo QT
+Zname bugy:
 - Ak ti to stale nejde, mas pri buildovani 0% a cela kompilacia sekne, tak skus toto: v priecinku "C:\MinGW\bin" duplikuj subor libgmp-10.dll a kopiu premenuj na libgmp-3.dll
