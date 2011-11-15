@@ -26,7 +26,7 @@ QT_QMAKE_EXECUTABLE   C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\qmake.exe
    5b. klikneme RunConfiguration->Add->CustomExecutable  
    5b. do riadku "Executable" vyberieme cestu k priecinku "TrollEdit\bin\trolledit" 
        napr. "C:\Documents and Settings\User\Desktop\TrollEdit Innovators\TrollEdit\TrollEdit\bin\trolledit"
-   5c. do riadku "Executable" vyberieme cestu k priecinku "TrollEdit\bin"
+   5c. do riadku "Working directory" vyberieme cestu k priecinku "TrollEdit\bin"
        napr. "C:\Documents and Settings\User\Desktop\TrollEdit Innovators\TrollEdit\TrollEdit\bin"
    5d. Dame buildnut.
 6. Ak pustame aplikaciu, ale nejde a hlasi ze mu chybaju nejake DLL-ka (napr. QtCore4.dll, QtGui4.dll, libgcc_s_dw2-1.dll), tak ich k nej treba nahrat z cesty "C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin" 
