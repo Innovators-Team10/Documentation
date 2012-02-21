@@ -1,0 +1,51 @@
+Odporúèaná štruktúra správy je: 
+--------------------------------
+##Definícia cie¾ov a oèakávaných dopadov/prínosov 
+-> mat funkcny multiplatformovy textovy editor schopny pracovat s grafickymi prvkami (obohateny)
+	• otpimalizovany pre rychlu pracu a spracovanie výpoètovo nároèných operácií
+	• vytvorenie plnohodnotného editora  a jeho  nasadenia pre reálne využitie 
+
+-> podporit myslienku literate programming a umoznit pisat dokumentaciu rovno ku kodu a nasledne robit vystupy
+
+-> ulahcenie prace s textom, ktory uz nie je jednoliaty - graphical enhancement - podporenie prirodzeneho rozoznavania textu ako sme tomu zvyknuty v niektorych inych IDE nastrojoch (ide este dalej)
+	• Moderné a privetive používate¾ské rozhranie
+
+##Opis problémovej oblasti 
+-> vyuzitie roznych grafickych prvkom pre moznosti vizualizacie a prace s textom
+	• bezna funkcionalita editora by mala byt doplnena o ïalšie graficke moznosti
+-> specifika projektu
+
+##Preh¾ad riešenia 
+-> Technologie
+	Qt framework  široké možnosti práce s grafikou (v c++ zvysok riesenia)
+	Lua (LuaJit), Kniznica Lpeg  - k tomu Maros a Lubos, co uz to dokaze
+	- poskytuju nam moznosti na zabezpecenie vsetkych aspektov specifikacie editora
+-> Aby celkovo zobrazenie textu ako grafickych blokov bolo mozne, pouziva sa pre jeho analyzu a pracu s nim AST strom.
+-> Aktualna podpora gramatiky jazykov a ich vizualizacia pre xml, c, lua
+
+##Zhrnutie súèasného stavu riešenia projektu 
+- zakladna funkcionalita je implementovana
+- jadro pre podporu nastroja je uz hotove
+- aktualne prebieha optimalizacia riesenia a dorabanie chutoviek, ktore maju byt hlavne vizualizacneho charakteru pre pouzivatela
+- paralelizovanie operácie analyzi textu
+- zabudovane prace editora v dvoch modoch - textovej a grafickej (k tomu obrazok)
+- zabudovanie vlastných Shortcuts, ktore si moze pouzivatel nakonfigurovat
+
+##Plán ïalšieho postupu 
+- zabudovanie ToDo listu do editora spolu s gramatikou, ktora umozni urcit, ze teraz piseme nieco pre ToDo list
+- sparalelizovat vsetky narocne operacie
+
+
+Co prezentovat:
+iny pristup, uberanie sa inym smerom, obycajne syntakticke zvyraznovanie (nepozera na semantiku)
+chceme pouzit graficke prvky, organizaciu do blokov (v com ma prinos)
+motivacia
+kam to speje
+
+Obrazky:
+Lua
+
+##Abstract
+This editor is trying to move even further with the idea of supporting rich-text blocks that would allow us to write documentation directly into source files and support the idea of literate programming by Mr. Donald Knuth.
+
+TrollEdit can be considered as the first step towards the usage of graphical enhanced editors capable of easier text modification by enhancing natural human senses for working with text as with graphic elements instead of simple sequence of characters.
