@@ -1,0 +1,17 @@
+Obsah prezentacie:
+
+Jozef
+- uvod o èom je projekt a predstavenie timu
+- o èom ten projekt je (nejake omaèky o textovych editorch že nevyuživaju graf. prvky a literate programming) + ciele projektu 
+- použite technologie 
+- ako pracuje editor( spomenut ako sa vytvara AST strom a podobne)
+
+Luboš 
+- demo - ukazat funkcionalitu programu a spomenut èo sme implementovali (idelane to spustime len ako .exe subor kedže 
+  platia murphyho zakony tak to urètie nepodje v Qt creatore)
+(tak na 5 minut demo) 
+
+Jozef  
+- Èo ešte planujeme
+- linky na projekt kde nas najdu 
+- otazky 
