@@ -1,19 +1,17 @@
 ==============SUBOR======================
 /** 
-*@Title nazov suboru
-*----------------------------------------------
-*@Description
-*   [ popis suboru, na èo služi a èo sa v nom rieši ]
-*
-*@Category  o aky typ suboru ide 
-*@Author  ak ide o novy subor, tak je vhodne mat meno autora suboru.
-*@Verzion
+* @file Nazov_suboru.cpp
+* @author Team 04 Ufopak + Team 10 Innovators
+* @version 1.0...
+* 
+* @section DESCRIPTION
+* popis suboru, na èo služi a èo sa v nom rieši
 */
 
 ============FUNKCIA=====================
 Pred funkciou 
 /**
- * @Descripton Popis funkcie, v skratke èo ma robit
+ * Popis funkcie, v skratke èo ma robit
  *
  * @param meno_vstunej_premennej na èo služi
  *
@@ -25,5 +23,7 @@ Pred funkciou
  ===========JEDEN RIADOK================
  int var;		 //! Struèny popis daneho riadku kodu, premennej, priradenia atd.
  
- ===========PRE BUDUCE GENERACIE========
- // TODO:  doplnit  funkcionalitu
+ ===========PRE BUDUCE GENERACIE======== (dokaze generovat todolist)
+ /**
+ * @todo Remove this later
+ */
