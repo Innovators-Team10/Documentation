@@ -1,0 +1,29 @@
+==============SUBOR======================
+/** 
+*@Title nazov suboru
+*----------------------------------------------
+*@Description
+*   [ popis suboru, na èo služi a èo sa v nom rieši ]
+*
+*@Category  o aky typ suboru ide 
+*@Author  ak ide o novy subor, tak je vhodne mat meno autora suboru.
+*@Verzion
+*/
+
+============FUNKCIA=====================
+Pred funkciou 
+/**
+ * @Descripton Popis funkcie, v skratke èo ma robit
+ *
+ * @param meno_vstunej_premennej na èo služi
+ *
+ * @see metodaXY() - odvolavka na nejaku inu metodu, bude ako link vygenerovane, nie je nutne
+ *
+ * @return popis co vracia dana metoda 
+ */
+
+ ===========JEDEN RIADOK================
+ int var;		 //! Struèny popis daneho riadku kodu, premennej, priradenia atd.
+ 
+ ===========PRE BUDUCE GENERACIE========
+ // TODO:  doplnit  funkcionalitu
