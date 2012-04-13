@@ -10,12 +10,18 @@ TrollEdit - instalujte nasledovne
 Dajte forknut TrollEdit z Innovators-Team10 na svoj ucet (https://github.com/Innovators-Team10/TrollEdit/fork)
  git@github.com:Innovators-Team10/TrollEdit.git
  
+
+============== PLATI pre Qt 4.7.4. ============== 
 Treba nastavit Enviroments vo Windowse 
-PATH                  C:\MinGW\bin;C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin
+PATH                  C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin; C:\MinGW\bin; 	- mingw v adresari pri Qt obsahuje dll kniznice pre Qt, ktore sa pouzivaju a preto je najvhodnejsie mat ho v PATH prvymi
 QMAKESPEC             C:\QtSDK\Desktop\Qt\4.7.4\mingw\mkspecs\win32-g++
 QT_LIBRARIES          C:\QtSDK\Desktop\Qt\4.7.4\mingw\lib
 QT_MOC_EXECUTABLE     C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\moc.exe
 QT_QMAKE_EXECUTABLE   C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\qmake.exe
+
+============= Pre Qt 4.8.0 a novsie
+- cesty sa nastavuju podobne ako pre 4.7.4, s tym rozdielom, ze v adresari C:\QtSDK\Desktop\Qt\ vyberieme aktualnu verziu ktoru potrebujeme
+
 
 1. Zapnete QT Creator a pozrieme v Tools->Options->Projects->CMake premenna "Executable" musi byt nastavena na "C:\Program Files\CMake 2.8\bin\cmake.exe" 
 2. Dalej v QT ako projekt otvorime CmakeLists.txt nastavite cestu pre Build do niekde priecinku (napr. _build), klikneme "run Cmake", ak nam bude chybat cesta pre QMAKESPEC, tak ju nastavime do argumentov "-DQCMAKESPEC=C:\QtSDK\Desktop\Qt\4.7.4\mingw\mkspecs\win32-g++"
@@ -34,3 +40,12 @@ QT_QMAKE_EXECUTABLE   C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\qmake.exe
 
 Zname bugy:
 - Ak ti to stale nejde, mas pri buildovani 0% a cela kompilacia sekne, tak skus toto: v priecinku "C:\MinGW\bin" duplikuj subor libgmp-10.dll a kopiu premenuj na libgmp-3.dll
+
+
+=============== Rychlejsie paralelne buildovanie v Qt ===============
+1. v sekcii Projects -> Build Settings -> Build Environments trebba pridat premennu SHELL s hodnotou cmd.exe
+   - SHELL = cmd.exe
+2. Do build prikazu potom staci pridat prepinac -j (mozeme rovno cislo povedat kolko threadov ma pouzit)
+   - cmake install -j
+   - cmake install -j 4
+   
