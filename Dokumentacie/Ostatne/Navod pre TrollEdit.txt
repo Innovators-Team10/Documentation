@@ -49,3 +49,17 @@ Zname bugy:
    - cmake install -j
    - cmake install -j 4
    
+=============== Navod ako vytvorit instalacku cez Cpack - Win =======
+1. Pre windows je potrebne mat nainstalovany NSIS
+
+2. Do C:\MinGW\bin\ treba nakopirovat sucasti pre Visual Studio Command Prompt, ktore su dodavane len s instalaciou Visual Studia. 
+Je potrebne sem pridat tieto casti:
+   - dumpbin.exe 
+   - link.exe
+   - mspdb100.dll
+ Daju sa ziskat dvoma sposobmi:
+   a) ti co nemaju Visual Studio si mozu rovno stiahnut s repozitara Innovators na GitHub v sekcii Download balicek cpack.zip
+   b) ak mate VS tak .exe subory sa nachadzaju v adresari c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\ a DLL niekde tam musite pohladat :)
+   
+3. Ak mate vsetko nakopirovane a nainstalovany NSIS, tak staci v adresari, ktory si vytvara Qt resp Cmake pre buildovanie (ten _build) v konzole zadat prikaz "cpack"
+   - cize CMD -> prikaz cpack - chvilku to potrva a vytvori to jeden .exe subor - klasicka instalacka
