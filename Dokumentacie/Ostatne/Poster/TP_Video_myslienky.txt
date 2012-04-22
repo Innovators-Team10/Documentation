@@ -1,0 +1,17 @@
+CO BY MOHLO BYT VO VIDEU:
+
+1. Otvorenie editora - uvodna obrazovka
+2. zvacsenie editora na celu obrazovku cez skratku
+3. na uvodnom obrazku ktory tam je, spravit nahlad co sa nachadza v ktorej casti - taky teoreticky
+3.1 do vstupu vleti tam pouzivatel, subory zobrazenia obrazky, text
+3.2 do technologii, trolledit ako nastroj, a jednodtlive technologie - Qt, Css, C++, UI
+3.3 gramitiky - Lua, Lpeg
+3.4 Teoreticky vystup editora - tak pekne ako by to malo v tych blokoch vyzerat
+4. Otvorenie snippetu - napisanie nejakeho kodu; Lenivost - otvorit si subor so vzormi, premiestnit ho, odzoomovat, a normalne robit drag&drop
+5. Prepnutie do textoveho modu, dopisanie nejakeho kodu a komentara
+6. Otvorenie viacerych suborov, prilozenie obrazku, odkazu na nejaky subor
+7. Novy tab, vytvorenie xml dlheho suboru
+8. Novy tab, nacitanie obrovskeho suboru, otvorenie noveho prazdneho, prekopirovanie celej funkcie. 
+
++ davat tam text o co sa jedna, nejake poznamky, alebo ako medzi obrazky
++ rovno uviest do deja, ziadny zaciatok a koniec - aspon zatial

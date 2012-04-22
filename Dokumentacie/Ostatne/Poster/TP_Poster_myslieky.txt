@@ -1,0 +1,38 @@
+===================== POSTER NAPADY =======================
+=====TEXT:
++ 1-sentence overview of why your research is interesting and relevant  
+
+=> K tym porovnavacim obrazkom text, alebo niekam, take napady:
+-> Pride Vam vas zdrojovy kod ako atomova elektraren, nam uz nie
+-> Nechceli by ste pri pohlade na vas zdrojovy kod namiesto tohto vidiet radsej toto
+-> Ako vidi zdrojovy kod programator, bezny pouzivatel, manazer (How you see ...)
+-> a ako by mohli vidiet svoj zdrojovy kod za pomoci TrollEditu 
+
+-> What if instead of this ..(plain text editor).. You can work with this ..(graphically enhanced editor)..
+  - Why to use this Notepad, when you can have TrollEdit
+  - Feel the difference
+  
+=> Advantages:
+  - semantic analyser
+  - language grammars
+  - hierarchy of blocks
+  - write documention just in time - documentation attached to code
+  
+  + realny projekt - vlastny skutocny vyvoj, vedeny product backlog, verzioavanie systemu, vydavanie aktualizacii
+  + praca s blokovymi strukturami skorej ako praca s textom, text je reprezentovany ako blok - analyzovany na semantickej urovni
+  + viacero funkcionalit navyse ponuka oproti beznym - dva mody, viacero suborov v okne, 
+  + literate programming
+  +? odstranuje bezne problemy pri editacii textu
+
+=====GRAFIKA:
+- pouzit editor
+- postupne cez taby preklikavat, na kazdom nejake hlavne features TrollEditu ->take 4 obrazovky dokopy / 4 taby
+=>Comparison: 
+- dve obrazovky - dva mody tam - Bezna praca s textovym editorom. < - > A takto to vyzera u nas 
+=>
++ QR Code - na timovu stranku projektu
++ Used technologies
+
++ LOGO Innovators ; - v uvode / nadpise
++ LOGO TrollEdit_napis ; - je bude v ramci toho velkeho obrazka
++ LOGO TrollEdit_Ikonka ; - moze byt na spodku, alebo niekde sa tam pichne, napr. ak bude sipka ako prechod od normalnych editorov ku grafickemu zvyraznovaniu (tie dva obrazky porovnavacie) tak do tej by to slo pichnut
